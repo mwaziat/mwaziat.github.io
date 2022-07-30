@@ -1,103 +1,121 @@
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-    font-family: "Avenir Next";
-  }
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	background-color: #2cc28f;
+	color: #ffffff;
+	display: inline-block; 
+  opacity: 0.8;
+}
+
+.btn a{
+	color: #ffffff;
   
-  li {
-    list-style: none;
-  }
+}
+
+.btn:hover {
+  opacity : 1;
+}
+
+.title {
+	text-align: center;
+}
+
+
+/* Mengatur Header */
+header {
+	background-color: #0e78be;
+	color: #ffffff;
+	height: 90px;
+	width: 100%;
+}
+
+.header-logo {
+	float: left;
+	font-size: 36px;
+	padding: 20px 40px;
+}
+
+nav li {
+	float: left;
+	padding: 35px 20px;
+}
+
+nav li a {
+	color: #ffffff;
+}
+
+/* Mengatur Banner */
+main .container {
+	background-color: #ffffff;
+	width: 100%;
+	padding: 100px 100px;
+	display: flex;
+}
+
+.banner-title h1 {
+	font-size: 60px;
+	color: #b2b1b1;
+}
+
+.banner-title h1 span {
+	color: #0e78be;
+	letter-spacing: 5px;
+}
+
+.banner-description {
+	font-size: 30px;
+	color: #b2b1b1;
+}
+
+main .container .btn {
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 40px;
+}
+
+.banner-image img {
+	width: 400px;
+	margin-left: 50px;
+}
+
+/*Mengatur Content Product*/
+content .product, .container-feature, .container-product {
+	width: 100%;
+	color: #ffffff;
+	padding: 10px 30px;
+	background-color: #0e78be;
+}
+
+.product-items {
+	display:flex;
   
-  .header {
-    background-color: #26d0c9;
-    color: #fff;
-    height: 90px;
-  }
-  
-  .header-logo {
-    float: left;
-    font-size: 36px;
-    padding: 20px 40px;
-  }
-  
-  .header-list li {
-    float: left;
-    padding: 33px 20px;
-  }
-  
-  .main {
-    padding: 100px 80px;
-  }
-  
-  .copy-container h1 {
-    font-size: 140px;
-  }
-  
-  .copy-container h2 {
-    font-size: 60px;
-  }
-  
-  .copy-container span {
-    color: #ff4a4a;
-  }
-  
-  .contents {
-    height: 500px;
-    margin-top: 100px;
-  }
-  
-  .section-title {
-    border-bottom: 2px solid #dee7ec;
-    font-size: 28px;
-    padding-bottom: 15px;
-    margin-bottom: 50px;
-  }
-  
-  .contents-item {
-    float: left;
-    margin-right: 40px;
-  }
-  
-  .contents-item p {
-    font-size: 24px;
-    margin-top: 30px;
-  }
-  
-  .contact-form {
-    padding-top: 100px;
-  }
-  
-  /* Tambahkan CSS untuk tags <input> dan <textarea> */
-  input, textarea {
-    width: 400px;            
-  margin-top: 10px;            
-  margin-bottom: 30px;            
-  padding: 20px;            
-  font-size: 18px;            
-  border: 1px solid #dee7ec;
-  }
-  
-  /* Tambahkan CSS untuk contact-submit */
-  .contact-submit{
-    background-color :#dee7ec;
-    color :#889eab;
-  }
-  
-  .footer {
-    background-color: #2f5167;
-    color: #fff;
-    height: 120px;
-    padding: 40px;
-  }
-  
-  .footer-logo {
-    float: left;
-    font-size: 32px;
-  }
-  
-  .footer-list {
-    float: right;
-  }
-  
-  .footer-list li {
-    padding-bottom: 20px;
-  }
-  
+}
+
+.container-product {
+  padding : 20px 20px 20px 20px ;
+}
+
+.product-name {
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+}
+
+li:hover {
+  background-color: rgb(31, 109, 226);
+}
