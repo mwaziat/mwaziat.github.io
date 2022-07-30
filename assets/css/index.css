@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 body {
     font-family: "Avenir Next";
   }
@@ -101,3 +102,303 @@ body {
     padding-bottom: 20px;
   }
   
+=======
+/* Reset CSS */
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	background-color: #2cc28f;
+	color: #ffffff;
+	display: inline-block;
+}
+
+.btn a{
+	color: #ffffff;
+}
+
+.title {
+	text-align: center;
+}
+
+
+/* Mengatur Header */
+header {
+	background-color: #0e78be;
+	color: #ffffff;
+	height: 90px;
+	width: 100%;
+}
+
+.header-logo {
+	float: left;
+	font-size: 36px;
+	padding: 20px 40px;
+}
+
+nav li {
+	float: left;
+	padding: 35px 20px;
+}
+
+nav li a {
+	color: #ffffff;
+}
+
+/* Mengatur Banner */
+main .container {
+	background-color: #ffffff;
+	width: 100%;
+	/* padding: 100px 100px; */
+	display: flex;
+}
+
+.banner-title h1 {
+	font-size: 60px;
+	color: #b2b1b1;
+}
+
+.banner-title h1 span {
+	color: #0e78be;
+	letter-spacing: 5px;
+}
+
+.banner-description {
+	font-size: 30px;
+	color: #b2b1b1;
+}
+
+main .container .btn {
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 40px;
+}
+
+.banner-image img {
+	width: 400px;
+	margin-left: 50px;
+}
+
+/*Mengatur Content Product*/
+content .product, .container-feature, .container-product {
+	width: 100%;
+	background-color: #0e78be;
+}
+
+.product-items {
+	display: flex;
+}
+
+.product-title{
+	font-size: 32px;
+	color: '#000';
+}
+.align-center{
+	text-align: center;
+}
+.c-white{
+	color: #fff;
+}
+.d-flex{
+	display: flex;
+}
+.fs1{
+	font-size: 12px ;
+}
+.fs2{
+	font-size: 16px ;
+}
+.fs3{
+	font-size: 20px ;
+}
+.fs4{
+	font-size: 24px;
+}
+.fs5{
+	font-size: 26px ;
+}
+.fs-big{
+	font-size: 32px;
+}
+.p1 {
+	padding: 10px ;
+}
+.p2 {
+	padding: 20px ;
+}
+.pt1 {
+	padding-top: 10px ;
+}
+.pt2 {
+	padding-top: 20px ;
+}
+.pt3 {
+	padding-top: 30px ;
+}
+.pt4 {
+	padding-top: 40px;
+}
+.pb1 {
+	padding-bottom: 10px ;
+}
+.pb2 {
+	padding-bottom: 20px ;
+}
+.justify-content-between{
+	justify-content: space-between;
+}
+.justify-content-center{
+	justify-content: center;
+}
+.font-bold{
+	font-weight: bold;
+}
+.font-w1{
+	font-weight: 100;
+}
+.font-w2{
+	font-weight: 200;
+}
+.container {
+	display: flex;
+	-webkit-display: box;
+	-moz-display: box;
+	-ms-display: flexbox;
+	-webkit-display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+.cards{
+	display: flex;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	width: 100%;
+}
+.card-item{
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	width: 100%;
+	border-radius: 7px;
+	box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+	overflow: hidden;
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+}
+
+.card-info {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	padding: 1rem;
+	line-height: 1.5em;
+}
+
+.card-title {
+	font-size: 25px;
+	line-height: 1.1em;
+	color: #32325d;
+	margin-bottom: 0.2em;
+}
+
+.card-text {
+	font-size: 12px;
+	line-height: 1.5em;
+	color: rgb(61, 61, 61);
+	margin-bottom: 0.2em;
+}
+
+.card-img{
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-size: cover;
+}
+
+.card-image{
+	height: 200px;
+	overflow: hidden;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 6px 6px 0px 0px;
+	opacity: 0.91;
+}
+
+.pricing-el-small {
+	font-size: 0.9em;
+	color: hsl(0,0,38);
+}
+
+.pricing-el-med {
+	font-size: 1.15em;
+	color: hsl(0,0,20);
+}
+
+ul {
+	list-style: none;
+	text-align: center;
+}
+
+li {
+	height: 43px;
+	line-height: 40px;
+	width: 100%;
+	border-top: 1px solid hsl(0,0,90);
+	border-bottom: 1px solid hsl(0,0,90);
+}
+
+.btn-primary{
+	all: unset;
+	display: block;
+	border: 2px solid #0e78be;
+	padding: 10px 15px;
+	border-radius: 25px;
+	font-size: 14px;
+	font-weight: 600;
+	transition: all 0.5s;
+	cursor: pointer;
+	letter-spacing: 1.2px;
+}
+
+.btn-primary:hover{
+	color:#fff;
+	background: #0e78be;
+	cursor: pointer;
+}
+
+/* ============================================== media query ============================================ */
+@media(min-width: 640px) {
+	.cards {
+		width: 45%;
+	}
+}
+@media(min-width: 991px) {
+	.cards {
+		width: 30%;
+	}
+
+	.card-lg {
+		width: 22%;
+	}
+}
+>>>>>>> Stashed changes
