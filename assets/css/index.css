@@ -43,18 +43,31 @@ header {
 }
 
 .header-logo {
-	float: left;
 	font-size: 36px;
-	padding: 20px 40px;
 }
 
 nav li {
 	float: left;
-	padding: 35px 20px;
 }
 
 nav li a {
 	color: #ffffff;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 90px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.nav-navbar ul li {
+	padding:15px
+}
+.nav-navbar ul li:hover {
+	background-color: rgb(31, 109, 226);
+	border-radius: 10px;
 }
 
 /* Mengatur Banner */
@@ -525,10 +538,101 @@ textarea {
   }
 }
 
+.footer {
+	background-color: #2f5167;
+	color: #fff;
+	height: 120px;
+	padding: 40px;
+}
 
+.footer-logo {
+	float: left;
+	font-size: 32px;
+}
+
+.footer-list {
+	float: right;
+}
+
+.footer-list li {
+	padding-bottom: 20px;
+}
+
+
+.footer-container{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	background-color: #0e78be;
+	height: 250px;
+	padding-top: 70px;
+	/* align-items: center; */
+}
+.footer-container .media-social {
+	padding: 10px;
+	flex: 50%;
+}
+
+.footer-container .address {
+	padding: 10px;
+	flex: 50%;
+}
+
+.footer-container .footer-title {
+	font-size: x-large;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.media-social-icon ul{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.footer-container .media-social-icon a{
+	color: #fff;
+}
+
+.footer-container .media-social-icon ul li{
+	padding: 15px;
+	margin: 10px;
+	background-color: #2f5167;
+	flex-basis: 10%;
+}
+
+.footer-container .media-social-icon ul li:hover{
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+.align-left{
+	text-align: left;
+}
+.copyright{
+	text-align: center;
+	padding: 25px;
+	align-items: center;
+	justify-content: center;
+	background-color: #2f5167;
+	color: #fff;
+}
 
 /* ============================================== media query ============================================ */
 @media all and (max-width: 670px) {
+	.navbar {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.navbar .header-logo{
+		font-size: 20px;
+	}
+
+	.footer-container{
+		display: grid;
+		height: 550px;
+	}
 	.banner-right img {
 		text-align: center;
 		margin: 0 auto;
