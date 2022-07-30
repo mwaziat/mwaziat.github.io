@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Metrophobic&family=Oxygen&display=swap");
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.heading h2 {
+  font-family: "Inconsolata", monospace;
+}
