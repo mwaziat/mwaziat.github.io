@@ -1,5 +1,7 @@
 /* Reset CSS */
  @import url('https://fonts.googleapis.com/css?family=Roboto');
+ @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Metrophobic&family=Oxygen&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -281,12 +283,213 @@ li {
 	cursor: pointer;
 }
 
+.profile-container {
+  /* max-width: 1170px; */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+	display: grid;
+  /* background-color: aqua; */
+}
+
+.profile-heading h2 {
+  font-family: "Inconsolata", monospace;
+}
+
+.profile-wrapper {
+  padding-bottom: 80px;
+  /* background-color: red; */
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* card */
+.profile-cards {
+  /* max-width: 1170px; */
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.profile-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.profile-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img .profile {
+  border-radius: 5px 5px 0 0;
+}
+
+.profile-text-wrapper {
+  padding: 2px 16px;
+}
+
+.profile-text-wrapper h4,
+.profile-text-wrapper p {
+  font-family: "Metrophobic", sans-serif;
+}
+
+/* Contact */
+.contact-container {
+  width: 60%;
+  padding: 0 ;
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+
+.contact-form-wrapper {
+  padding-bottom: 80px;
+  /* background-color: red; */
+}
+
+.contact-heading {
+  padding: 20px 0;
+}
+
+.contact-heading h2 {
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Metrophobic", sans-serif;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Metrophobic", sans-serif;
+}
+
+/* div {
+  border-radius: 5px;
+  padding: 20px;
+  font-family: "Metrophobic", sans-serif;
+} */
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #0e78be;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #0e78be;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #0e78be;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+
 /* ============================================== media query ============================================ */
+@media all and (max-width: 670px) {
+  .profile-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+	.contact-container {
+		width: 90%;
+		/* background-color: aqua; */
+	}
+}
+
 @media(min-width: 640px) {
 	.cards {
 		width: 45%;
 	}
+
+	.profile-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+	.glow-on-hover {
+    width: 100%;
+  }
 }
+
 @media(min-width: 991px) {
 	.cards {
 		width: 30%;
@@ -295,4 +498,16 @@ li {
 	.card-lg {
 		width: 22%;
 	}
+
+	.profile-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+	
 }
+/* 
+@media all and (max-width: 1000px) {
+  .glow-on-hover {
+    width: 100%;
+  }
+} */
+

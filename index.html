@@ -50,7 +50,7 @@
       <p class="product-title align-center c-white pb2 pt2">Produk Kami</p>
     
 
-			<div class="container">
+			<div class="container justify-content-center">
 				<div class="cards">
 					<div class="card-item">
 						<div class="card-img">
@@ -177,59 +177,85 @@
 	</content>
 
 	<!-- Membuat Konten Anggota Tim -->
-	<content class="team">
-		<div class="container">
-			<div class="team title">
-				<h3>Team Kami</h3>
-				<p>Team kami beranggotakan :</p>
-			</div>
-			<div class="members">
-				<div class="member">
-					<div class="member-img"><img src="" alt="Photo"></div>
-					<div class="member-name"><a href="#akunGITHUB">Nama</a></div>
-				</div>
-
-				<div class="member">
-					<div class="member-img"><img src="" alt="Photo"></div>
-					<div class="member-name"><a href="#akunGITHUB">Nama</a></div>
-				</div>
-
-				<div class="member">
-					<div class="member-img"><img src="" alt="Photo"></div>
-					<div class="member-name"><a href="#akunGITHUB">Nama</a></div>
-				</div>
-
-				<div class="member">
-					<div class="member-img"><img src="" alt="Photo"></div>
-					<div class="member-name"><a href="#akunGITHUB">Nama</a></div>
-				</div>
-
-				<div class="member">
-					<div class="member-img"><img src="" alt="Photo"></div>
-					<div class="member-name"><a href="#akunGITHUB">Nama</a></div>
-				</div>
-			</div>
-		</div>
+	<content>
+		<div class="profile-wrapper">
+      <div class="profile-container">
+        <div class="profile-heading">
+          <h2 class="align-center pt2 pb2">Team Profile</h2>
+        </div>
+        <div class="profile-cards">
+          <!-- card -->
+          <div class="profile-card">
+            <img class="profile"
+              src="./assets/image/profile3.jpg"
+              alt="Avatar"
+              style="width: 100%"
+            />
+            <div class="profile-text-wrapper">
+              <h4 class="align-center pt2 pb1"><b>Soyid Agi Prasetio</b></h4>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="profile-card">
+            <img class="profile"
+              src="./assets/image/profile2.jpg"
+              alt="Avatar"
+              style="width: 100%"
+            />
+            <div class="profile-text-wrapper">
+              <h4 class="align-center pt2 pb1"><b>Tjokorda Gde Agung Friska Adnyana</b></h4>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="profile-card">
+            <img class="profile"
+              src="./assets/image/profile3.jpg"
+              alt="Avatar"
+              style="width: 100%"
+            />
+            <div class="profile-text-wrapper">
+              <h4 class="align-center pt2 pb1"><b>Waziat Mar'I</b></h4>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="profile-card">
+            <img class="profile"
+              src="./assets/image/profile2.jpg"
+              alt="Avatar"
+              style="width: 100%"
+            />
+            <div class="profile-text-wrapper">
+              <h4 class="align-center pt2 pb1"><b>Richard Pradana Sinaga</b></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 	</content>
 
 	<!-- Membuat Formulir Hubungi Kami -->
 	<content class="contact">
-		<div class="container">
-			<div class="contact title"><h3>Hubungi Kami</h3></div>
-			<form action="">
-				<label for="nama">Nama Anda :</label> <br>
-				<input type="text" name="" id="nama" placeholder="Masukkan nama anda"> <br>
+		<div class="contact-form-wrapper">
+      <div class="contact-container">
+        <div class="contact-heading">
+          <h2>Contact Us</h2>
+        </div>
+        <form>
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+          />
 
-				<label for="email">E-Mail Anda :</label> <br>
-				<input type="email" name="" id="email" placeholder="Masukkan email anda"> <br>
+          <label for="lname">Subject</label>
+          <textarea>Some text...</textarea>
 
-				<label for="phone">No. Handphone Anda :</label> <br>
-				<input type="text" name="" id="phone" placeholder="Masukkan no. handphone anda"> <br>
-
-				<label for="message">Pesanan Anda :</label> <br>
-				<textarea name="" id="message" cols="30" rows="10" placeholder="Masukkan pesanan anda"></textarea> <br>
-			</form> 
-		</div>
+          <button class="glow-on-hover" type="button">Submit</button>
+        </form>
+      </div>
+    </div>
 	</content>
 
 	<!-- Membuat footer -->
