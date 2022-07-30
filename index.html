@@ -9,17 +9,25 @@
 </head>
 <body>
 
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
 	<!-- Membuat Header -->
 	<header>
-		<div class="header-logo"><< GOL3-6 A07 >></div>
-		<nav>
-			<ul>
-				<li><a href="#">Beranda</a></li>
-				<li><a href="#">Produk</a></li>
-				<li><a href="#">Tentang Kami</a></li>
-				<li><a href="#">Hubungi Kami</a></li>
-			</ul>
-		</nav>
+    <div class="navbar">
+      <div class="header-logo">GOL3-6 A07</div>
+      <nav class="nav-navbar">
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Produk</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Hubungi Kami</a></li>
+        </ul>
+      </nav>
+    </div>
 	</header>
 
 	<!-- Membuat Banner -->
@@ -38,125 +46,216 @@
 
 	<!-- Membuat Konten Produk -->
 	<content>
-		<div class="product title"><h3>Produk Kami</h3>
+    <div class="product">
+      <p class="product-title align-center c-white pb2 pt2">Produk Kami</p>
+    
 
-		<div class="container-feature">
-			<div class="features">
-				<div class="feature">
-					<div class="feature-image"><img src="assets/image/undraw_devices_re_dxae.svg" alt=""></div></div>
-					<div class="feature-text"><p>Desain Responsive</p></div>
+			<div class="container justify-content-center">
+				<div class="cards">
+					<div class="card-item">
+						<div class="card-img">
+							<div class="card-image"  style="background-image: url('assets/image/undraw_devices_re_dxae.svg');"></div>
+						</div>
+						<div class="card-info">
+							<h2 class="card-title">Desain Responsive</h2>
+							<p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div>
 				</div>
 
-				<div class="feature">
-					<div class="feature-image"><img src="assets/image/undraw_time_management_re_tk5w.svg" alt=""></div></div>
-					<div class="feature-text"><p>Pengerjaan Cepat</p></div>
+				<div class="cards">
+					<div class="card-item">
+						<div class="card-img">
+							<div class="card-image" style="background-image: url('assets/image/undraw_time_management_re_tk5w.svg');">
+							</div>
+						</div>
+						<div class="card-info">
+							<h2 class="card-title">Pengerjaan Cepat</h2>
+							<p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div>
 				</div>
 
-				<div class="feature">
-					<div class="feature-image"><img src="assets/image/undraw_savings_re_eq4w.svg" alt=""></div></div>
-					<div class="feature-text"><p>Harga Terjangkau</p></div>
+				<div class="cards">
+					<div class="card-item">
+						<div class="card-img">
+							<div class="card-image" style="background-image: url('assets/image/undraw_savings_re_eq4w.svg');"></div>
+						</div>
+						<div class="card-info">
+							<h2 class="card-title">Harga Terjangkau</h2>
+							<p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div>
 				</div>
 			</div>
+
 		</div>
 
+		<div class="container justify-content-center">
 
-
-
-		<div class="container-product">
-			<div class="product-items">
-				<div class="product-item">
-					<div class="produk-name">Website UMKM</div>
-					<div class="product-description">
-						<p>Mulai dari :</p>
+			<div class="cards card-lg">
+				<div class="card-item">
+					<div class="card-info align-center">
+						<h3 class="pt2 pb1 fs-2">Website UMKM</h3>
+						<div class="d-flex justify-content-center pb2">
+							<h2>Rp. 2.000.000</h2>
+							<P class="pricing-el-small pt1">/Developer</P>
+						</div>
+						<p class="pricing-el-small pt-4 font-bold">Fitur yang didapat</p>
+						<ul class="pricing pricing-el-small pt2">
+							<li class="pricing" style="background-color: #e6e6e6;">Lorem dolem wolem</li>
+							<li class="pricing" >Lorem dolem</li>
+							<li class="pricing" style="background-color: #e6e6e6;">Lorem dolem wolem</li>
+							<li class="pricing" >Dolem wolem</li>
+						</ul>
+						<button class="btn-primary">Pesan</button>
 					</div>
-					<div class="product-price">Rp. ....,00</div>
-					<div class="btn">Pesan</div>
-				</div>
-
-				<div class="product-item">
-					<div class="produk-name">Website Perusahaan</div>
-					<div class="product-description">
-						<p>Mulai dari :</p>
-					</div>
-					<div class="product-price">Rp. ....,00</div>
-					<div class="btn">Pesan</div>
-				</div>
-
-				<div class="product-item">
-					<div class="produk-name">Website Tour Travel</div>
-					<div class="product-description">
-						<p>Mulai dari :</p>
-					</div>
-					<div class="product-price">Rp. ....,00</div>
-					<div class="btn">Pesan</div>
-				</div>
-
-				<div class="product-item">
-					<div class="produk-name">Website Toko Online</div>
-					<div class="product-description">
-						<p>Mulai dari :</p>
-					</div>
-					<div class="product-price">Rp. ....,00</div>
-					<div class="btn">Pesan</div>
 				</div>
 			</div>
+
+			<div class="cards card-lg">
+				<div class="card-item">
+					<div class="card-info align-center">
+						<h3 class="pt2 pb1 fs-2">Website Perusahaan</h3>
+						<div class="d-flex justify-content-center pb2">
+							<h2>Rp. 4.500.000</h2>
+							<P class="pricing-el-small pt1">/Developer</P>
+						</div>
+						<p class="pricing-el-small pt-4 font-bold">Fitur yang didapat</p>
+						<ul class="pricing pricing-el-small pt2">
+							<li class="pricing" style="background-color: #e6e6e6;">Lorem dolem wolem</li>
+							<li class="pricing" >Lorem dolem</li>
+							<li class="pricing" style="background-color: #e6e6e6;">Lorem dolem wolem</li>
+							<li class="pricing" >Dolem wolem</li>
+						</ul>
+						<button class="btn-primary">Pesan</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="cards card-lg">
+				<div class="card-item">
+					<div class="card-info align-center">
+						<h3 class="pt2 pb1 fs-2">Website Tour Travel</h3>
+						<div class="d-flex justify-content-center pb2">
+							<h2>Rp. 6.500.000</h2>
+							<P class="pricing-el-small pt1">/Developer</P>
+						</div>
+						<p class="pricing-el-small pt-4 font-bold">Fitur yang didapat</p>
+						<ul class="pricing pricing-el-small pt2">
+							<li class="pricing" style="background-color: #e6e6e6;">Lorem dolem wolem</li>
+							<li class="pricing">Lorem dolem</li>
+							<li class="pricing" style="background-color: #e6e6e6;">Lorem dolem wolem</li>
+							<li class="pricing">Dolem wolem</li>
+						</ul>
+						<button class="btn-primary">Pesan</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="cards card-lg">
+				<div class="card-item">
+					<div class="card-info align-center">
+						<h3 class="pt2 pb1 fs-2">Website Toko Online</h3>
+						<div class="d-flex justify-content-center pb2">
+							<h2>Rp. 5.000.000</h2>
+							<P class="pricing-el-small pt1">/Developer</P>
+						</div>
+						<p class="pricing-el-small pt-4 font-bold">Fitur yang didapat</p>
+						<ul class="pricing pricing-el-small pt2">
+							<li class="pricing" style="background-color: #e6e6e6;">Lorem dolem wolem</li>
+							<li class="pricing" >Lorem dolem</li>
+							<li class="pricing" style="background-color: #e6e6e6;">Lorem dolem wolem</li>
+							<li class="pricing" >Dolem wolem</li>
+						</ul>
+						<button class="btn-primary">Pesan</button>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</content>
 
 	<!-- Membuat Konten Anggota Tim -->
-	<content class="team">
-		<div class="container">
-			<div class="team title">
-				<h3>Team Kami</h3>
-				<p>Team kami beranggotakan :</p>
-			</div>
-			<div class="members">
-				<div class="member">
-					<div class="member-img"><img src="" alt="Photo"></div>
-					<div class="member-name"><a href="#akunGITHUB">Nama</a></div>
-				</div>
-
-				<div class="member">
-					<div class="member-img"><img src="" alt="Photo"></div>
-					<div class="member-name"><a href="#akunGITHUB">Nama</a></div>
-				</div>
-
-				<div class="member">
-					<div class="member-img"><img src="" alt="Photo"></div>
-					<div class="member-name"><a href="#akunGITHUB">Nama</a></div>
-				</div>
-
-				<div class="member">
-					<div class="member-img"><img src="" alt="Photo"></div>
-					<div class="member-name"><a href="#akunGITHUB">Nama</a></div>
-				</div>
-
-				<div class="member">
-					<div class="member-img"><img src="" alt="Photo"></div>
-					<div class="member-name"><a href="#akunGITHUB">Nama</a></div>
-				</div>
-			</div>
-		</div>
+	<content>
+		<div class="profile-wrapper">
+      <div class="profile-container">
+        <div class="profile-heading">
+          <h2 class="align-center pt2 pb2">Team Profile</h2>
+        </div>
+        <div class="profile-cards">
+          <!-- card -->
+          <div class="profile-card">
+            <img class="profile"
+              src="./assets/image/profile3.jpg"
+              alt="Avatar"
+              style="width: 100%"
+            />
+            <div class="profile-text-wrapper">
+              <h4 class="align-center pt2 pb1"><b>Soyid Agi Prasetio</b></h4>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="profile-card">
+            <img class="profile"
+              src="./assets/image/profile2.jpg"
+              alt="Avatar"
+              style="width: 100%"
+            />
+            <div class="profile-text-wrapper">
+              <h4 class="align-center pt2 pb1"><b>Tjokorda Gde Agung Friska Adnyana</b></h4>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="profile-card">
+            <img class="profile"
+              src="./assets/image/profile3.jpg"
+              alt="Avatar"
+              style="width: 100%"
+            />
+            <div class="profile-text-wrapper">
+              <h4 class="align-center pt2 pb1"><b>Waziat Mar'I</b></h4>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="profile-card">
+            <img class="profile"
+              src="./assets/image/profile2.jpg"
+              alt="Avatar"
+              style="width: 100%"
+            />
+            <div class="profile-text-wrapper">
+              <h4 class="align-center pt2 pb1"><b>Richard Pradana Sinaga</b></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 	</content>
 
 	<!-- Membuat Formulir Hubungi Kami -->
 	<content class="contact">
-		<div class="container">
-			<div class="contact title"><h3>Hubungi Kami</h3></div>
-			<form action="">
-				<label for="nama">Nama Anda :</label> <br>
-				<input type="text" name="" id="nama" placeholder="Masukkan nama anda"> <br>
+		<div class="contact-form-wrapper">
+      <div class="contact-container">
+        <div class="contact-heading">
+          <h2>Contact Us</h2>
+        </div>
+        <form>
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+          />
 
-				<label for="email">E-Mail Anda :</label> <br>
-				<input type="email" name="" id="email" placeholder="Masukkan email anda"> <br>
+          <label for="lname">Subject</label>
+          <textarea>Some text...</textarea>
 
-				<label for="phone">No. Handphone Anda :</label> <br>
-				<input type="text" name="" id="phone" placeholder="Masukkan no. handphone anda"> <br>
-
-				<label for="message">Pesanan Anda :</label> <br>
-				<textarea name="" id="message" cols="30" rows="10" placeholder="Masukkan pesanan anda"></textarea> <br>
-			</form> 
-		</div>
+          <button class="glow-on-hover" type="button">Submit</button>
+        </form>
+      </div>
+    </div>
 	</content>
 
 	<!-- Membuat footer -->
