@@ -1,0 +1,111 @@
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+/* Mengatur Banner */
+
+.container .btn {
+	background-color: rgba(44, 194, 143, 0.7);
+	color: #ffffff;
+	display: inline-block;
+}
+
+.container .btn a {
+	color: #ffffff;
+}
+
+.container .btn:hover {
+	background-color: rgba(44, 194, 143, 1.0);
+}
+
+main .container {
+	background-color: #ffffff;
+	padding: 100px 100px;
+	display: flex;
+}
+
+.banner-title h1 {
+	font-size: 60px;
+	color: #b2b1b1;
+}
+
+.banner-title h1 span {
+	color: #0e78be;
+	letter-spacing: 5px;
+}
+
+.banner-description {
+	font-size: 30px;
+	color: #b2b1b1;
+}
+
+main .container .btn {
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 40px;
+}
+
+.banner-image img {
+	width: 400px;
+	margin-left: 50px;
+}
+
+/* Animasi Gambar */
+.banner-image img {
+  position: relative;
+  animation: transisi-dua 3s;
+}
+
+@keyframes transisi-dua {
+  from {right: -200px;}
+  to {right: 0px;}
+}
+
+/* Responsive */
+
+/* Responsive Ukuran Tablet */
+@media screen and (max-width: 1000px){
+	main .container {
+		display: block;
+	}
+
+	.banner-left {
+		text-align: center;
+	}
+
+	.btn {
+		text-align: center;
+	}
+}
+
+/* Responsive Ukuran Smartphone */
+@media screen and (max-width: 670px){
+	main .container {
+		display: block;
+	}
+
+	.banner-right .banner-image img{
+		width: 110%;
+		padding : 0 auto;
+	}
+
+	.banner-left {
+		text-align: center;
+	}
+
+	.btn {
+		text-align: center;
+	}
+	
+}
