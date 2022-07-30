@@ -1,115 +1,68 @@
- Reset CSS */
+/* Reset CSS */
 * {
 	margin: 0;
 	padding: 0;
 }
 
-
-/* Mengatur Content Product */
-
-/* Mengatur Content Keunggulan Kami*/
-main {
+body {
 	font-family: Arial, Helvetica, sans-serif;
-	width: 100%;
 }
 
-section {
-	padding: 30px 100px;
-	display: flex;
-	margin: 20px;
-}
 
-main h3 {
-	text-align: center;
-	margin: 20px auto;
-	letter-spacing: 1px;
-	font-size: 25px;
-}
-
-section h2 {
-	color: #DF7861;
-	font-size: 35px;
-	padding-top: 30px;
-
-}
-
-section img {
-	width: 400px;
-	margin: 10px;
-}
-
-.section-text p {
-	padding-top: 20px;
-}
-
-/* Mengatur Content Product */
-.products {
-	background-color: #6C63FF;
-	width: 100%;
-}
-
-.products h3 {
-	color: #ffffff;
-	padding-top: 20px;
-}
-
-.cards {
-	display: flex;
-	justify-content: space-between;
-	padding: 10px 20px;
-	margin: 10px 10px;
-}
-
-.product-text {
-	margin: 20px;
-	padding: 20px;
-	border: 1px solid #000000;
-	text-align: center;
-	border-radius: 20px;
-	background-color: #ffffff;
-}
-
-.product-text h3 {
-	color: #2f3bda;
-	font-weight: bold;
-	padding-bottom: 20px;
-}
-
-.product-text h1 {
-	color: #DF7861;
-	font-size: 35px;
-	font-weight: bolder;
-}
-
-.product-text button {
-	background-color: rgba(27, 135, 78, 0.7) ;
-	padding: 20px;
-	border: none;
-}
-
-.product-text button a{
-	color: #ffffff;
+a {
 	text-decoration: none;
-	font-weight: bolder;
 }
 
+/* Mengatur Banner */
 
-.product-text button:hover {
-	background-color: rgba(27, 135, 78, 1.0) ;
+.container .btn {
+	background-color: rgba(44, 194, 143, 0.7);
+	color: #ffffff;
+	display: inline-block;
+}
+
+.container .btn a {
+	color: #ffffff;
+}
+
+.container .btn:hover {
+	background-color: rgba(44, 194, 143, 1.0);
+}
+
+main .container {
+	background-color: #ffffff;
+	padding: 100px 100px;
+	display: flex;
+}
+
+.banner-title h1 {
+	font-size: 60px;
+	color: #b2b1b1;
+}
+
+.banner-title h1 span {
+	color: #0e78be;
+	letter-spacing: 5px;
+}
+
+.banner-description {
+	font-size: 30px;
+	color: #b2b1b1;
+}
+
+main .container .btn {
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 40px;
+}
+
+.banner-image img {
+	width: 400px;
+	margin-left: 50px;
 }
 
 /* Animasi Gambar */
-.satu img {
-  position: relative;
-  animation: transisi-satu 3s;
-}
-
-@keyframes transisi-satu {
-  from {left: -200px;}
-  to {left: 0px;}
-}
-
-.dua img {
+.banner-image img {
   position: relative;
   animation: transisi-dua 3s;
 }
@@ -119,42 +72,40 @@ section img {
   to {right: 0px;}
 }
 
-
 /* Responsive */
 
 /* Responsive Ukuran Tablet */
 @media screen and (max-width: 1000px){
-	.cards {
-		flex-wrap: wrap;
-		justify-content: center;
+	main .container {
+		display: block;
 	}
 
-	main {
-		font-size: 100%;
+	.banner-left {
+		text-align: center;
 	}
 
-	
+	.btn {
+		text-align: center;
+	}
 }
 
 /* Responsive Ukuran Smartphone */
 @media screen and (max-width: 670px){
-	section {
+	main .container {
 		display: block;
-		margin: 10px auto;
-		padding: 10px auto;
 	}
 
-	section img{
+	.banner-right .banner-image img{
 		width: 110%;
+		padding : 0 auto;
 	}
 
-	.cards {
-		display: block;
-	}
-
-	section h2, p {
+	.banner-left {
 		text-align: center;
 	}
 
+	.btn {
+		text-align: center;
+	}
 	
 }
