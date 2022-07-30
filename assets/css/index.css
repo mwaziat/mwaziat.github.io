@@ -251,12 +251,12 @@ content .product, .container-feature, .container-product {
 	color: hsl(0,0,20);
 }
 
-ul {
+ul.pricing {
 	list-style: none;
 	text-align: center;
 }
 
-li {
+li.pricing {
 	height: 43px;
 	line-height: 40px;
 	width: 100%;
