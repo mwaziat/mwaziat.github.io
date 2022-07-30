@@ -1,101 +1,260 @@
-/* Reset CSS */
+ Reset CSS */
 * {
 	margin: 0;
 	padding: 0;
 }
 
-body {
+
+/* Mengatur Content Product */
+
+/* Mengatur Content Keunggulan Kami*/
+main {
 	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
 }
 
-li {
-	list-style: none;
+section {
+	padding: 30px 100px;
+	display: flex;
+	margin: 20px;
 }
+
+main h3 {
+	text-align: center;
+	margin: 20px auto;
+	letter-spacing: 1px;
+	font-size: 25px;
+}
+
+section h2 {
+	color: #DF7861;
+	font-size: 35px;
+	padding-top: 30px;
+
+}
+
+section img {
+	width: 400px;
+	margin: 10px;
+}
+
+.section-text p {
+	padding-top: 20px;
+}
+
+/* Mengatur Content Product */
+.products {
+	background-color: #6C63FF;
+	width: 100%;
+}
+
+.products h3 {
+	color: #ffffff;
+	padding-top: 20px;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+	margin: 10px 10px;
+}
+
+.product-text {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #000000;
+	text-align: center;
+	border-radius: 20px;
+	background-color: #ffffff;
+}
+
+.product-text h3 {
+	color: #2f3bda;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.product-text h1 {
+	color: #DF7861;
+	font-size: 35px;
+	font-weight: bolder;
+}
+
+.product-text button {
+	background-color: rgba(27, 135, 78, 0.7) ;
+	padding: 20px;
+	border: none;
+}
+
+.product-text button a{
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+
+.product-text button:hover {
+	background-color: rgba(27, 135, 78, 1.0) ;
+}
+
+/* Animasi Gambar */
+.satu img {
+  position: relative;
+  animation: transisi-satu 3s;
+}
+
+@keyframes transisi-satu {
+  from {left: -200px;}
+  to {left: 0px;}
+}
+
+.dua img {
+  position: relative;
+  animation: transisi-dua 3s;
+}
+
+@keyframes transisi-dua {
+  from {right: -200px;}
+  to {right: 0px;}
+}
+
+
+/* Responsive */
+
+/* Responsive Ukuran Tablet */
+@media screen and (max-width: 1000px){
+	.cards {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	main {
+		font-size: 100%;
+	}
+
+	
+}
+
+/* Responsive Ukuran Smartphone */
+@media screen and (max-width: 670px){
+	section {
+		display: block;
+		margin: 10px auto;
+		padding: 10px auto;
+	}
+
+	section img{
+		width: 110%;
+	}
+
+	.cards {
+		display: block;
+	}
+
+	section h2, p {
+		text-align: center;
+	}
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*content .product, .container-feature, .container-product {
+	color: #ffffff;
+	padding: 10px 30px;
+	background-color: #0e78be;
+}*/
+
+
+
+
+
+
+
+
+
+
+/*.feature-image img{
+	background-color: #ffffff;
+	height: 120px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.feature-text p{
+	margin: 20px auto;
+}
+
+.container-feature {
+
+}
+
+.product-items {
+	display: flex;
+	text-align: center;
+}
+
+.product-items {
+	width: 100%;
+}
+
+.product-item {
+	margin: 10px 40px;
+	width: 25%;
+	background-color: #ffffff;
+	color: #000000;
+	border-radius: 10px;
+}
+
+.product-items .product-item .product-name p{
+	margin: 20px;
+	color: red;
+}
+
+.product-item .btn-content {
+	padding: 15px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
 
 a {
 	text-decoration: none;
 }
 
-.btn {
+.btn-content {
 	background-color: #2cc28f;
 	color: #ffffff;
 	display: inline-block;
 }
 
-.btn a{
+.btn-content a{
 	color: #ffffff;
 }
 
-.title {
+.title h3{
 	text-align: center;
-}
-
-
-/* Mengatur Header */
-header {
-	background-color: #0e78be;
-	color: #ffffff;
-	height: 90px;
-	width: 100%;
-}
-
-.header-logo {
-	float: left;
-	font-size: 36px;
-	padding: 20px 40px;
-}
-
-nav li {
-	float: left;
-	padding: 35px 20px;
-}
-
-nav li a {
-	color: #ffffff;
-}
-
-/* Mengatur Banner */
-main .container {
-	background-color: #ffffff;
-	width: 100%;
-	padding: 100px 100px;
-	display: flex;
-}
-
-.banner-title h1 {
-	font-size: 60px;
-	color: #b2b1b1;
-}
-
-.banner-title h1 span {
-	color: #0e78be;
-	letter-spacing: 5px;
-}
-
-.banner-description {
-	font-size: 30px;
-	color: #b2b1b1;
-}
-
-main .container .btn {
-	padding: 20px;
-	border-radius: 10px;
-	margin-top: 40px;
-}
-
-.banner-image img {
-	width: 400px;
-	margin-left: 50px;
-}
-
-/*Mengatur Content Product*/
-content .product, .container-feature, .container-product {
-	width: 100%;
-	color: #ffffff;
-	padding: 10px 30px;
-	background-color: #0e78be;
-}
-
-.product-items {
-	display: flex;
+	padding-bottom: 5px;
 }
