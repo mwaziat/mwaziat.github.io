@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Metrophobic&family=Oxygen&display=swap");
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+
+.heading h2 {
+  font-family: "Inconsolata", monospace;
+}
+
+.profile-wrapper {
+  padding-bottom: 80px;
+  /* background-color: red; */
+}
+
+/* card */
+.cards {
+  /* max-width: 1170px; */
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.text-wrapper {
+  padding: 2px 16px;
+}
+
+.text-wrapper h4,
+.text-wrapper p {
+  font-family: "Metrophobic", sans-serif;
+}
+
+@media all and (max-width: 1000px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (max-width: 670px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
